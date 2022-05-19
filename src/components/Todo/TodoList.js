@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import TodoForm from "./TodoForm";
 import Todo from "./Todo";
+import { FormattedMessage, IntlProvider } from "react-intl";
+import French from "../../Lang/fr.json";
+import Arabic from "../../Lang/sp.json";
+import English from "../../Lang/en.json";
 
 function TodoList() {
   const [todos, setTodos] = useState([]);

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { FormattedMessage } from "react-intl";
 
 function TodoForm(props) {
   const [input, setInput] = useState(props.edit ? props.edit.value : "");
@@ -54,7 +55,10 @@ function TodoForm(props) {
             ref={inputRef}
           />
           <button onClick={handleSubmit} className="todo-button">
-            Add todo
+            <FormattedMessage
+              id="app.name"
+              defaultMessage="Tnregistrez-les pour"
+            />
           </button>
         </>
       )}
